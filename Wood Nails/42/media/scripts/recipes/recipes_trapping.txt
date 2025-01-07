@@ -1,0 +1,46 @@
+module Base
+{
+	craftRecipe MakeWoodenBoxTrap
+	{
+        timedAction = SawLogs,
+		Time = 120,
+		NeedToBeLearn = True,
+		Tags = InHandCraft;Trapper,
+        category = Survival,
+		AutoLearn = Trapping:4,
+		xpAward = Woodwork:5,
+		inputs
+		{
+			item 1 tags[Saw] mode:keep flags[MayDegradeLight;Prop1],
+			item 1 tags[Hammer] mode:keep flags[MayDegradeLight],
+			item 3 [Base.Plank] flags[Prop2],
+			item 5 [Base.WoodNails],
+		}
+		outputs
+		{
+			item 1 Base.TrapCrate,
+		}
+	}
+	craftRecipe MakeTrapBox
+	{
+        timedAction = SawLogs,
+		Time = 150,
+		NeedToBeLearn = True,
+		SkillRequired = Woodwork:1;Trapping:2,
+		Tags = InHandCraft;Trapper,
+        category = Survival,
+		AutoLearn = Trapping:8,
+		xpAward = Woodwork:5,
+		inputs
+		{
+			item 1 tags[Saw] mode:keep flags[MayDegradeLight;Prop1],
+			item 1 tags[Hammer] mode:keep flags[MayDegradeLight],
+			item 4 [Base.Plank] flags[Prop2],
+			item 7 [Base.WoodNails],
+		}
+		outputs
+		{
+			item 1 Base.TrapBox,
+		}
+	}
+}

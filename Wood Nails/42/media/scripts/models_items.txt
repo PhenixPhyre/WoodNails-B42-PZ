@@ -1,0 +1,10 @@
+module Base
+{
+	model  WoodNails
+	{
+		mesh = WorldItems/WoodNails,
+		texture = WorldItems/WoodNails,
+		scale = 0.6,
+	}
+
+}
